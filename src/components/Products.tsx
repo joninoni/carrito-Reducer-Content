@@ -2,7 +2,7 @@ import { AddToCartIcon } from "./Icons"
 import "../products.css"//los estilos
 
 
-type Products = {
+export type ProductsArray = {
     id : number
     title : string
     description : string
@@ -16,7 +16,7 @@ type Products = {
     images : string[]
 }
 type ProductsProps = {
-    products : Products[]
+    products : ProductsArray[]
 }
 const Products = ({products} : ProductsProps) => {
     return (
